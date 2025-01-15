@@ -1,8 +1,5 @@
-import React from 'react'
-import Home from '../pages/Home'
-import Users from '../pages/Users'
-import Auth from '../pages/Auth'
 import { NavLink } from 'react-router-dom'
+import { Auth, Home, Users } from '../pages'
 
 
 export const navbarList = [
@@ -27,8 +24,8 @@ export const navbarList = [
 ]
 const Header = () => {
   return (
-    <div className='flex justify-center gap-2 items-center bg-blue-600 w-full p-5'>
-      {navbarList.map(item => <NavLink to={item.path} key={item.id} className={"text-[1.3rem] font-semibold gap-2 border-b-2 text-white border-b-transparent"}>{item.title}</NavLink>)}
+    <div className='flex justify-center gap-5 items-center bg-blue-600 w-full p-5'>
+      {navbarList.map(item => <NavLink to={item.path} key={item.id} className={"text-[1.3rem] font-semibold border-b-2 text-white border-b-transparent"}>{item.title}</NavLink>)}
     </div>
   )
 }
