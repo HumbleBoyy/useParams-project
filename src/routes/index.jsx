@@ -31,7 +31,7 @@ const PageRoutes = () => {
         <Route path='/users' element={<Users/>}/>
         <Route path='/users/:id' element={<SingleUser/>}/>
         <Route path='/auth' element={<Auth/>}>
-          <Route path='/auth/login' element={<Login/>}/>
+          <Route index  element={<Login/>}/>
           <Route path='/auth/register' element={<Register/>}/>
         </Route>
      </Routes>
