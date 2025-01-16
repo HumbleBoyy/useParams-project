@@ -9,7 +9,7 @@ const SingleUser = () => {
 
   return (
     <div className='flex items-center justify-center mt-10'>
-      <UserCard item={singleData}/>
+      <UserCard backToMain={true} item={singleData}/>
     </div>
   )
 }
